@@ -4,10 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/src/bootstrap.min.css">
+    <title>EpicGames</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="box" href="#"><img src="/src/assets/favicon.ico" class="favicon" alt=""></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link text-light" href="#">STORE<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link text-light" href="#">PERGUNTAS FREQUENTES<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link text-light" href="#">AJUDA<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link text-light" href="#">UNREAL ENGINE<span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+                    <a href="#" class="mr-2 text-light"><ion-icon class="iconTranslate"name="globe-outline"></ion-icon></a>
+                    <div class="profile form-inline">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <a href="#" class="nav-link text-light">ENTRAR</a>
+                    </div>
+                    <button class="btn btn-primary m-0" type="submit">BAIXAR EPIC GAMES</button>
+                </div>
+        </nav>
+    </header>
+    <div id="topo" class="topo">
+      <nav class="navbar navbar-expand-lg navbar-light py-4">
+          <input class="form-control pesquisar" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <a href="#" class="nav-link text-light">Descobrir</a>
+          <a href="#" class="nav-link text-light">Navegar</a>
+          <a href="#" class="nav-link text-light">Novidades</a>
+      </nav>
+  </div>
+    <div class="corpo" id="corpo">
+        
+        <section class="sec1 row" id="sec1">
+          <div class="leftsec1 card col-9">
+            <img src="/src/assets/nascar1.jpg" id="img" alt="">
+          </div>
+
+          <div class="list-group col-3 rightsec1" id="MyList">
+
+            <a href="#" class="list-group-item list-group-item-action" id="rl" onclick="changepanel('rl')">
+              <img src="/src/assets/nascar2.png" alt="">
+              <span>Rocket League</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action" id="ash" onclick="changepanel('ash')">
+              <img src="/src/assets/ash2.jpg" alt="">
+              <span>Evil Dead: The Game</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action" id="fi" onclick="changepanel('fi')">
+              <img src="/src/assets/fi2.jpg" alt="">
+              <span>FI 22</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action" id="mf" onclick="changepanel('mf')">
+              <img src="/src/assets/mf2.jpg" alt="">
+              <span>MythForce</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action" id="sp" onclick="changepanel('sp')">
+              <img src="/src/assets/sp2.jpg" alt="">
+              <span>Space Punks</span>
+            </a>
+
+          </div>
+        </section>
+    </div> 
     
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>
