@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="/src/bootstrap.min.css">
-    <title>EpicGames</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="shortcut icon" href="/src/assets/favicon.ico">
+    <title>Clone Epic Games Store</title>
 </head>
 <body>
     <header>
@@ -28,7 +30,7 @@
                   </li>
                 </ul>
                 <div class="form-inline my-2 my-lg-0">
-                    <a href="#" class="mr-2 text-light"><ion-icon class="iconTranslate"name="globe-outline"></ion-icon></a>
+                    <a href="#" class="mr-2 text-light globo"><ion-icon class="iconTranslate"name="globe-outline"></ion-icon></a>
                     <div class="profile form-inline">
                         <ion-icon name="person-outline"></ion-icon>
                         <a href="#" class="nav-link text-light">ENTRAR</a>
@@ -46,35 +48,569 @@
       </nav>
   </div>
     <div class="corpo" id="corpo">
-        
+        <!-- Primeira Célula -->
         <section class="sec1 row" id="sec1">
           <div class="leftsec1 card col-9">
-            <img src="/src/assets/nascar1.jpg" id="img" alt="">
+            <img src="/src/assets/nascar1.jpg" class="" id="img" alt="">
           </div>
 
           <div class="list-group col-3 rightsec1" id="MyList">
 
-            <a href="#" class="list-group-item list-group-item-action" id="rl" onclick="changepanel('rl')">
-              <img src="/src/assets/nascar2.png" alt="">
-              <span>Rocket League</span>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action" id="ash" onclick="changepanel('ash')">
-              <img src="/src/assets/ash2.jpg" alt="">
-              <span>Evil Dead: The Game</span>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action" id="fi" onclick="changepanel('fi')">
-              <img src="/src/assets/fi2.jpg" alt="">
-              <span>FI 22</span>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action" id="mf" onclick="changepanel('mf')">
-              <img src="/src/assets/mf2.jpg" alt="">
-              <span>MythForce</span>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action" id="sp" onclick="changepanel('sp')">
-              <img src="/src/assets/sp2.jpg" alt="">
-              <span>Space Punks</span>
-            </a>
+            <div id="1a">
+              <div id="1b" style="display: block;">
+                <a href="#" class="list-group-item list-group-item-action" id="rl" onclick="changepanel('rl')">
+                  <img src="/src/assets/nascar2.png" alt="">
+                  <span>Rocket League</span>
+                </a>
+              </div>
+            </div>
 
+            <div id="2a">
+              <div id="2b">
+                <a href="#" class="list-group-item list-group-item-action" id="ash" onclick="changepanel('ash')">
+                  <img src="/src/assets/ash2.jpg" alt="">
+                  <span>Evil Dead: The Game</span>
+                </a>
+              </div>
+            </div>
+
+            <div id="3a">
+              <div id="3b">
+                  <a href="#" class="list-group-item list-group-item-action" id="fi" onclick="changepanel('fi')">
+                    <img src="/src/assets/fi2.jpg" alt="">
+                    <span>FI 22</span>
+                  </a>
+              </div>
+            </div>
+
+            <div id="4a">
+              <div id="4b">
+                <a href="#" class="list-group-item list-group-item-action" id="mf" onclick="changepanel('mf')">
+                  <img src="/src/assets/mf2.jpg" alt="">
+                  <span>MythForce</span>
+                </a>
+              </div>
+            </div>
+
+            <div id="5a">
+              <div id="5b">
+                <a href="#" class="list-group-item list-group-item-action" id="sp" onclick="changepanel('sp')">
+                  <img src="/src/assets/sp2.jpg" alt="">
+                  <span>Space Punks</span>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        <!-- Segunda Célula -->
+        <section class="segC" id="segC">
+          <div class="max-width">
+
+            <h2 class="title">Jogos em promoção  ></h2>
+            <div class="secC-content">
+              <div class="carousel owl-carousel">
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/ash2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Evil Dead: The Game</h5>
+                    
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/fi2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Formula 1 - 2022</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/mf2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">MythForce</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" >
+                  <img class="card-img-top" src="/src/assets/nascar2.png" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Rocket League</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" >
+                  <img class="card-img-top" src="/src/assets/sp2.jpg" alt="">
+                  <div class="card-body" >
+                    <h5 class="card-title">Space Punks</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>              
+            </div>
+          </div>
+        </section>
+        <!-- terceira Célula -->
+        <section class="terC" id="terC">
+          <div class="leftbox" >
+            <div class="card">
+              <img class="card-img-top" src="/src/assets/fi1.jpg" alt="">
+              <div class="card-body" >
+                <h5 class="card-title">Formula 1</h5>
+                <div class="card-text">
+                  <p class="text">Raaaaananana Pa Raaananana</p>
+                  <a href="#"><p class="card-text sobretxt">Saber Mais</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightbox">
+            <div class="card">
+              <img class="card-img-top" src="/src/assets/ash1.jpg" alt="">
+              <div class="card-body" >
+                <h5 class="card-title">Evil Dead: The Game</h5>
+                <div class="card-text">
+                  <p class="text">O ataque da serra eletrica pae</p>
+                  <p class="card-text uncut">R$ 31,99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- quarta Célula -->
+        <section class="quaC" id="quaC">
+          <div class="topquaC">
+            <div class="leftcontent">
+              <ion-icon name="gift-outline"></ion-icon>
+              <p>Jogos grátis</p>
+            </div>
+            <div class="rightcontent">
+              <button type="button" class="btn btn-outline-secondary">VER MAIS</button>
+            </div>
+          </div>
+          
+
+          <div class="box">
+            <div class="card">
+              <img class="card-img-top" src="/src/assets/ash2.jpg" alt="">
+              <div></div>
+              <div class="card-body" >
+                <h5 class="card-title">Evil Dead: The Game</h5>
+                <div class="card-text-valor">
+                  <p>Grátis - 25 de dez.às 12:00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" >
+              <img class="card-img-top" src="/src/assets/fi2.jpg" alt="">
+              <div class="card-body" >
+                <h5 class="card-title">Formula 1 - 2022</h5>
+                <div class="card-text-valor">
+                  <p>Grátis - 25 de dez.às 12:00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" >
+              <img class="card-img-top" src="/src/assets/mf2.jpg" alt="">
+              <div class="card-body" >
+                <h5 class="card-title">MythForce</h5>
+                <div class="card-text-valor">
+                  <p>Grátis - 25 de dez.às 12:00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" >
+              <img class="card-img-top" src="/src/assets/sp2.jpg" alt="">
+              <div class="card-body" >
+                <h5 class="card-title">Space Punks</h5>
+                <div class="card-text-valor">
+                  <p>Grátis - 25 de dez.às 12:00</p>
+                </div>
+              </div>
+            </div>
+                
+            </div>
+          
+        </section>
+
+        <!-- quinta Célula -->
+
+        <section class="segC" id="segC">
+          <div class="max-width">
+
+            <h2 class="title">Jogos com Conquistas  ></h2>
+            <div class="secC-content">
+              <div class="carousel owl-carousel">
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/ash2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Evil Dead: The Game</h5>
+                    
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/fi2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Formula 1 - 2022</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/mf2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">MythForce</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" >
+                  <img class="card-img-top" src="/src/assets/nascar2.png" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Rocket League</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" >
+                  <img class="card-img-top" src="/src/assets/sp2.jpg" alt="">
+                  <div class="card-body" >
+                    <h5 class="card-title">Space Punks</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>              
+            </div>
+          </div>
+        </section>
+        <!-- sexta Célula -->
+        <section><p>3 colunas </p></section>
+
+        <!-- setima Célula -->
+
+        <section class="terC" id="terC">
+          <div class="leftbox" >
+            <div class="card">
+              <img class="card-img-top" src="/src/assets/mf1.jpg" alt="">
+              <div class="card-body" >
+                <h5 class="card-title">MythForce</h5>
+                <div class="card-text">
+                  <p class="text">pipi popopo pipipipipi popopopo</p>
+                  <a href="#"><p class="card-text sobretxt">Saber Mais</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightbox">
+            <div class="card">
+              <img class="card-img-top" src="/src/assets/sp1.jpg" alt="">
+              <div class="card-body" >
+                <h5 class="card-title">Space Punk</h5>
+                <div class="card-text">
+                  <p class="text">pipi popopo pipipipipi popopopo</p>
+                  <p class="card-text uncut">R$ 31,99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- oitava Célula -->
+        <section class="segC" id="segC">
+          <div class="max-width">
+
+            <h2 class="title">Atualizado recentemente  ></h2>
+            <div class="secC-content">
+              <div class="carousel owl-carousel">
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/ash2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Evil Dead: The Game</h5>
+                    
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/fi2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Formula 1 - 2022</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/mf2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">MythForce</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" >
+                  <img class="card-img-top" src="/src/assets/nascar2.png" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Rocket League</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" >
+                  <img class="card-img-top" src="/src/assets/sp2.jpg" alt="">
+                  <div class="card-body" >
+                    <h5 class="card-title">Space Punks</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>              
+            </div>
+          </div>
+        </section>
+        <!-- nona Célula -->
+
+        <section class="terC" id="terC">
+          <div class="leftbox" >
+            <div class="card">
+              <img class="card-img-top" src="/src/assets/fi1.jpg" alt="">
+              <div class="card-body" >
+                <h5 class="card-title">Formula 1</h5>
+                <div class="card-text">
+                  <p class="text">pipi popopo pipipipipi popopopo</p>
+                  <a href="#"><p class="card-text sobretxt">Saber Mais</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightbox">
+            <div class="card">
+              <img class="card-img-top" src="/src/assets/ash1.jpg" alt="">
+              <div class="card-body" >
+                <h5 class="card-title">Formula 1</h5>
+                <div class="card-text">
+                  <p class="text">pipi popopo pipipipipi popopopo</p>
+                  <p class="card-text uncut">R$ 31,99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!--decima célula-->
+        <section class="segC" id="segC">
+          <div class="max-width">
+
+            <h2 class="title">Mais populares  ></h2>
+            <div class="secC-content">
+              <div class="carousel owl-carousel">
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/ash2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Evil Dead: The Game</h5>
+                    
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/fi2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Formula 1 - 2022</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/mf2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">MythForce</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" >
+                  <img class="card-img-top" src="/src/assets/nascar2.png" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Rocket League</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" >
+                  <img class="card-img-top" src="/src/assets/sp2.jpg" alt="">
+                  <div class="card-body" >
+                    <h5 class="card-title">Space Punks</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>              
+            </div>
+          </div>
+        </section>
+        
+        <!--decima-primeira célula-->
+        <section class="segC" id="segC">
+          <div class="max-width">
+
+            <h2 class="title">Novo na Epic Games Store  ></h2>
+            <div class="secC-content">
+              <div class="carousel owl-carousel">
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/ash2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Evil Dead: The Game</h5>
+                    
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/fi2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Formula 1 - 2022</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="/src/assets/mf2.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">MythForce</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" >
+                  <img class="card-img-top" src="/src/assets/nascar2.png" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Rocket League</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" >
+                  <img class="card-img-top" src="/src/assets/sp2.jpg" alt="">
+                  <div class="card-body" >
+                    <h5 class="card-title">Space Punks</h5>
+                    <div class="card-text-valor">
+                      <button class="btn btn-primary m-0" type="submit">-20%</button>
+                      <p class="card-text cut">R$ 39,99</p>
+                      <p class="card-text uncut">R$ 31,99</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>              
+            </div>
           </div>
         </section>
     </div> 
@@ -84,6 +620,8 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <script src="/scripts/script.js"></script>
 </body>
 </html>

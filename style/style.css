@@ -8,11 +8,25 @@
     
 }
 
+img:hover {
+    filter: brightness(130%);
+    /* opacity: 0.3; */
+}
 header {
     font-size: small;
-    color:#e7e7e7;
+    /* color:#290c0c; */
     background-color: #2a2a2a;
     height: 60px;
+}
+header .globo{
+    margin-right: 10px;
+}
+header ion-icon{
+    color: #e7e7e7;
+    margin: 0px;
+    padding: 0px;
+    height: 20px;
+    width: 20px;
 }
 
 header .box img{
@@ -53,7 +67,6 @@ header .box img{
 .sec1{
     display: flex;
     height: auto;
-    
 }
 .sec1 .leftsec1.card{
     background-color: transparent;
@@ -66,6 +79,7 @@ header .box img{
     /* width: 100%;
     height: 100%; */
     border-radius: 15px;
+    
 }
 /* .rightsec1{
     /* justify-content: space-between; 
@@ -87,14 +101,155 @@ header .box img{
     background-color: #383737;
     transition: all 0.5s ease;
 }
-
-
+.myProgress{
+    width: 100%;
+    /* background-color: rgb(18, 18, 18) ; */
+    background-color: #2a2a2a;
+}
+.mybar{
+    width: 1%;
+    /* height: 30px; */
+    background-color: green;
+}
 .rightsec1 a img{
-    max-width: 20%;
-    /* height: 30%; */
-    object-fit:fill;
-    
+    max-width: 20%; 
+    object-fit:fill; 
+    /* max-width: 40px; */
 }
 .rightsec1 a span{
     color: #e7e7e7;
+}
+
+.segC{
+    padding-top: 60px;
+    max-height: max-content;
+}
+.segC .title{
+    color: #e7e7e7;
+    font-size:x-large;
+    padding-bottom: 20px;
+}
+.segC .card{
+    background-color: transparent;
+    border-color: transparent;
+}
+.segC .card img{
+    height: 300px;
+}
+.segC .card-title {
+    font-size: small;
+    color: #e7e7e7;
+}
+.segC .card-text-valor {
+    display: flex;
+}
+.segC .card-text-valor .btn{
+    height: 1.5rem;
+    width: 2.5rem;
+    font-size: x-small;
+    margin: 0;
+    padding: 0;
+}
+.segC .card-body{
+    padding-left: 0px;
+}
+.segC .card-text{
+    font-weight: 500;
+    font-size: small;
+}
+.segC .card-text.cut{
+    margin: auto 5px;
+    color: #443f3f;
+    text-decoration:line-through;
+}
+.segC .card-text.uncut,
+.terC .card-text .uncut{
+    color: #e7e7e7;
+}
+
+.terC {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10vh;
+}
+.terC .card {
+    background-color: transparent;
+    border-color: transparent;
+}
+.terC .card-body{
+    padding-left: 0px;
+}
+.terC .card-title {
+    /* font-size: small; */
+    color: #e7e7e7;
+}
+.terC .leftbox{
+    margin-right: 15px;
+    
+}
+.terC .rightbox{
+    margin-left: 15px;
+}
+.terC img{
+    border-radius: 20px;
+    object-fit: fill;
+}
+.terC p.text{
+    color: #949393;
+}
+.quaC{
+    background-color: #2a2a2a;
+    padding: 30px 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.quaC .box{
+    display: flex;
+}
+.quaC .topquaC{
+    justify-content: space-between;
+    display: flex;
+}
+.quaC .topquaC .leftcontent{
+    display: flex;
+    color: #e7e7e7;
+    font-size: large;
+    align-items:center;
+    padding-bottom: 30px;
+    padding-top: 0px;
+}
+.quaC .topquaC .leftcontent p{
+    margin: 0px;
+}
+.quaC .topquaC .leftcontent ion-icon{
+    height:40px;
+    width:40px;
+}
+.quaC .topquaC .rightcontent .btn{
+    color: #e7e7e7;
+    border-color: #e7e7e7;
+}
+.quaC .card{
+    /* width: 25%; */
+    background-color: transparent;
+    border-color: transparent;
+    height: max-content;
+}
+.quaC img{
+    height: 90%;
+    width: 90%;
+    object-fit: fill;
+    border-radius: 15px;
+    margin: auto auto;
+}
+.quaC .card-body{
+    padding-top: 10px;
+    color: #e7e7e7;
+    padding-bottom: 0px;
+}
+.quaC .card-body .title{
+    font-size: small;
+}
+.quaC .card-body p{
+    color: #949393;
 }
